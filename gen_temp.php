@@ -1,6 +1,9 @@
 #!/usr/bin/php5
-<?php #A script for generating temperature grapsh with graphs.php
-include("graphs.php");
-genTempGraph(1600, 800, 15, "temperature15", $link);
-genTempGraph(1600, 800, 5, "temperature5", $link);
+
+<?php
+include("graph.php");
+jGraphTemp(2600, 1000, 15, "../public_html/temperature15.png", $db, 1, false);
+jGraphTemp(2600, 1000,  5, "../public_html/temperature5.png", $db, 1, false);
 ?>
+
+

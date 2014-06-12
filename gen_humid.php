@@ -1,6 +1,6 @@
 #!/usr/bin/php5
-<?php #Script for generating humidity graphs with graphs.php
-include("graphs.php");
-genHumidGraph(1600, 800, 5, "humid5", $link);
-genHumidGraph(1600, 800, 15, "humid15", $link);
+<?php
+include("graph.php");
+jGraphHumid(2600,1000,15,"../public_html/humid15.png",$db,1,false);
+jGraphHumid(2600,1000,5,"../public_html/humid5.png",$db,1,false);
 ?>
